@@ -1,0 +1,36 @@
+git_repositories:
+  - repository: git@github.com:brain-tec/odoo.git
+    branch: 10.0
+    maindir: True
+    shallow: True
+  - repository: git@github.com:brain-tec/enterprise.git
+    branch: 10.0
+    maindir: True
+    shallow: True
+  - repository: git@github.com:brain-tec/BT-Developer.git
+    branch: 10.0
+    shallow: True
+    addons:
+      - bt_helper
+      - configure_odoo
+  - repository: git@github.com:brain-tec/partner-contact.git
+    branch: 10.0
+    shallow: True
+    addons:
+      - partner_firstname
+  - repository: git@github.com:brain-tec/server-tools.git
+    branch: 10.0
+    shallow: True
+    addons:
+      - base_technical_features
+      - server_environment
+      - mail_environment
+  - repository: git@github.com:brain-tec/Laser2000.git
+    branch: 10.0
+    mainrepo: True
+    addons:
+      - __test__
+      - server_environment_files
+
+add_deb_pkgs:
+  - ack-grep
